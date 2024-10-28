@@ -18,7 +18,7 @@ def test_raise_error_for_extreme_nums_length(solution_given: Solution)-> None:
     with pytest.raises(ValueError):
         solution_given.two_sum([1000], 9);
     with pytest.raises(ValueError):
-        given_arr: List[int] = list(range(1,10**15));
+        given_arr: List[int] = list(range(1,10**5));
         solution_given.two_sum(given_arr, 9);
 
 def test_raise_error_for_extreme_num_values(solution_given: Solution)-> None:
