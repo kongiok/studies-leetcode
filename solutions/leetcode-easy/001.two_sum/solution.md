@@ -29,3 +29,15 @@ Output:
 `[0,1]`
 
 # Thought Process
+
+```pseudo
+fun two_sum(nums: List[int], target: int)-> List[int]:
+  for i in 0..len(nums):
+    for j in i+1..len(nums):
+      if nums[i] + nums[j] != target:
+        continue;
+      return [i, j]
+  return []
+```
+
+我們曾經提出一個想法，使用 Binary Search 來解決這個問題，但是這個方法的時間複雜度是 O(nlogn)，而且我們需要排序整個陣列，這樣會改變原本的 index，所以我們放棄這個方法。
