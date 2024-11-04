@@ -1,6 +1,11 @@
 # Local Files
 .DS_Store
 *.local
+
+# Binaries
+*.exe
+bin/
+
 # Python files
 venv/
 __pycache__/
